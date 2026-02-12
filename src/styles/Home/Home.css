@@ -1,3 +1,5 @@
+@import "../style.css";
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +10,6 @@ body {
 .container-header {
     display: flex;
     height: 100vh;
-
 }
 
 .container-header-title {
@@ -53,7 +54,7 @@ button {
 
 h1 {
     color: white;
-    font-size: 6em;
+    font-size: 3em;
     font-family:sans-serif;
 
 }
