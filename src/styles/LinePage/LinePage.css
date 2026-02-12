@@ -7,6 +7,9 @@
     .Lines{
         background-color: white;
         border-radius:  10px;   
+        width:  1000px;
+       margin-left: 150px;
+       
     
     }
 
@@ -20,4 +23,5 @@
 
     .h1{
         text-align: left;
+        font-weight: ;
     }
