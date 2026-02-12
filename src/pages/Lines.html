@@ -9,41 +9,39 @@
 
     <link rel="stylesheet" href="../styles/Lines/Lines.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lines</title>
 </head>
 <body>
-<div class="bg-blur-img"></div>
-<button type="button"><svg class="menu-hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg></button>
+
+<div class="bg-blur bg-position"></div><img class="bg-map bg-position" src="../assets/images/image_city_map.png" alt="city map">
+<button type="button" class="menu-hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg></button>
+
 <main class="main-container">
     <header class="main-header">
-        <h1>Afficher <em>les lignes Tisséo</em> en cliquant</h1>
+        <h1>Afficher <em>les lignes Tisséo</em> en <br>cliquant ↓</h1>
         <button type="submit">Charger les données</button>
     </header>
 
-    <section class="">
-        <header>
-            <div>
+    <section class="lines-container">
+        <header class="lines-header">
+            <nav>
                 <span>Trier par</span>
                 <div>
-                    <button type="button">Nom</button>
-                    <button type="button">Mode de Transport</button>
-                    <button type="button">Handicap</button>
+                    <button type="button" class="btn-sort">Nom</button>
+                    <button type="button" class="btn-sort">Mode de Transport</button>
+                    <button type="button" class="btn-sort">Handicap</button>
                 </div>
-            </div>
-            <div>
-                <label>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg>
-                    <input type="search">
-                </label>
-            </div>
+            </nav>
+            <label>
+                <input class="btn-search" type="search" placeholder="Rechercher">
+            </label>
         </header>
 
-        <section>
+        <section class="lines-wrapper">
             <article>
                 <div>
                     <div>
-                        <img src="../assets/icons/icon_bus.png" alt="icône d'un bus">
+                        <img src="../assets/icons/icon_bus.png" width="50" alt="icône d'un bus">
                     </div>
                     <div>
                         <strong>La Vache / Fenouillet Centre Commercial - Entrée Nord</strong>
