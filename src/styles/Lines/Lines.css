@@ -4,3 +4,25 @@ body {
     color: white;
     background-color: var(--color-secondary-1);
 }
+
+.main-header {
+    width: 100%;
+    margin: auto;
+}
+.main-header h1 {
+    font-family: Pragmatica, sans-serif;
+    font-size: 3em;
+}
+.main-header em {
+    font-family: "Great Vibes", sans-serif;
+    font-style: italic;
+
+}
+
+
+/**************COMPONENTS*****************/
+.menu-hamburger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
