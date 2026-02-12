@@ -1,5 +1,16 @@
-p {
-    color: red;
-    font-size: 2rem;
-    text-align: center;
+:root {
+    --color-black: #000000;
+    --color-primary-1: #26497F;
+    --color-primary-2: #3399CC;
+    --color-primary-3: #0083B5;
+    --color-primary-4: #351A51;
+
+    --color-secondary-1: #003366;
+    --color-secondary-2: #66CCFF;
+    --color-secondary-3: #B3D9FF;
+    --color-secondary-4: #CCE6FF;
+
+    --color-neutral-100: #FFFFFF;
+    --color-neutral-200: #D9D9D9;
+    --color-neutral-900: #000000;
 }

@@ -1,0 +1,6 @@
+@import "../style.css";
+
+body {
+    color: white;
+    background-color: var(--color-secondary-1);
+}
