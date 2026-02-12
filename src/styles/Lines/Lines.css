@@ -47,14 +47,15 @@ body .bg-blur {
     border-radius: 8px;
     cursor: pointer;
     transition: opacity 200ms ease;
-    &:hover {opacity: 0.9;}
+    &:hover {opacity: 0.8;}
 }
 
 
 .lines-container {
     background-color: var(--color-primary-1);
-    margin-inline: 2rem; padding-inline: 2rem;
-    padding-block: 1rem;
+    margin-inline: 3rem; padding-inline: 3rem;
+    padding-block: 2rem;
+    margin-bottom: 3rem;
     border-radius: 32px;
     display: grid; gap: 2rem;
 }
@@ -114,6 +115,11 @@ body .bg-blur {
     font-size: 1.5em;
 }
 
+.line-icon img {
+    width: 50px;
+    height: auto;
+}
+
 /**************COMPONENTS*****************/
 
 .bg-map {
@@ -138,10 +144,12 @@ body .bg-blur {
     cursor: pointer;
     word-break: keep-all;
     text-wrap: nowrap;
+    &:has(input:not(:checked)) {opacity: 0.8;}
 }
 .btn-search {
+    width: 100%;
     padding-block: 0.5rem;
-    padding-inline: 3rem 1rem;
+    padding-inline: 2.5rem 1rem;
     color: var(--color-neutral-100);
     background-color: var(--color-primary-2);
     border: none;
@@ -150,11 +158,16 @@ body .bg-blur {
     cursor: pointer;
     outline: none;
     &::placeholder { color: var(--color-neutral-100)}
+}
 
-    &:before {
-        content: "";
-        display: inline-block;
-        width: 32px; height: 32px;
-        background: url(../../assets/icons/icon_search.svg) center;
+label:has(.btn-search) {
+    width: min(100%, 200px);
+    position: relative;
+    .icon-search {
+        display: block;
+        width: 24px; height: 24px;
+        position: absolute;
+        top: 50%; translate: 0 -50%;
+        left: 8px;
     }
 }
