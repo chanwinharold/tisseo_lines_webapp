@@ -1,4 +1,5 @@
 @import "../style.css";
+@import "./LinesMediaScreen.css";
 
 body {
     color: white;
@@ -34,6 +35,7 @@ body .bg-blur {
     background-color: var(--color-secondary-2);
     border-radius: 50px;
     padding: 0 0.5rem;
+    white-space: nowrap;
 }
 .main-header button {
     width: fit-content;
@@ -53,15 +55,14 @@ body .bg-blur {
 
 .lines-container {
     background-color: var(--color-primary-1);
-    margin-inline: 3rem; padding-inline: 3rem;
-    padding-block: 2rem;
-    margin-bottom: 3rem;
-    border-radius: 32px;
     display: grid; gap: 2rem;
 }
 
 .lines-header {
-    display: flex; gap: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -71,10 +72,21 @@ body .bg-blur {
     align-items: center;
 }
 .lines-header nav div {
-    max-width: 500px;
-    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     scrollbar-width: none;
-    display: flex; gap: 1rem;
+    -webkit-overflow-scrolling: touch;
+    .btn-sort {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+}
+
+.lines-header nav span {
+    white-space: nowrap;
 }
 
 .lines-wrapper {
@@ -97,12 +109,12 @@ body .bg-blur {
     gap: 1rem;
 }
 .line-infos div:first-child {
-    width: 80px; height: 80px;
     background-color: red;
     border-radius: 100%;
     display: grid;
     place-items: center;
 }
+
 .line-infos div:last-child {
     display: grid;
     place-items: start;
@@ -113,11 +125,6 @@ body .bg-blur {
 }
 .line-infos strong {
     font-size: 1.5em;
-}
-
-.line-icon img {
-    width: 50px;
-    height: auto;
 }
 
 /**************COMPONENTS*****************/
@@ -149,7 +156,7 @@ body .bg-blur {
 .btn-search {
     width: 100%;
     padding-block: 0.5rem;
-    padding-inline: 2.5rem 1rem;
+    padding-inline: 3rem 1rem;
     color: var(--color-neutral-100);
     background-color: var(--color-primary-2);
     border: none;
@@ -161,13 +168,12 @@ body .bg-blur {
 }
 
 label:has(.btn-search) {
-    width: min(100%, 200px);
+    min-width: 200px;
     position: relative;
     .icon-search {
         display: block;
-        width: 24px; height: 24px;
         position: absolute;
         top: 50%; translate: 0 -50%;
-        left: 8px;
+        left: 10px;
     }
 }

@@ -1,0 +1,65 @@
+/*All*/
+@media screen {
+    .lines-container {
+        margin-inline: 3rem; padding-inline: 3rem;
+        padding-block: 2rem; margin-block: 2rem;
+        border-radius: 32px;
+    }
+    .line-infos div:first-child {
+        min-width: 80px; height: 80px;
+    }
+    .line-infos div:first-child img {
+        width: 50px;
+    }
+    .icon-search {
+        width: 24px; height: 24px;
+    }
+}
+
+/*Desktop*/
+@media screen and (width > 1024px) {
+
+}
+
+/*Laptop*/
+@media screen and (width <= 1024px) {
+
+}
+
+/*Tablet*/
+@media screen and (width <= 768px) {
+    .icon-search {width: 16px; height: 16px;}
+    .icon-info {width: 24px; height: 24px; }
+    .lines-container {
+        margin-inline: 2rem; padding-inline: 2rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (width <= 575px) {
+    .line-infos div:first-child {
+        min-width: 50px; height: 50px;
+    }
+    .line-infos div:first-child img {
+        width: 30px;
+    }
+    .lines-header nav div {
+        max-width: 200px;
+    }
+    .lines-container {
+        margin-inline: 0.5rem; padding-inline: 2rem;
+        padding-block: 2rem; margin-block: 2rem;
+        border-radius: 12px;
+    }
+    .line-bookmark svg {
+        width: 24px; height: 24px;
+    }
+    .line-infos strong {
+        max-width: 30ch;
+        max-height: 2ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .icon-search {width: 14px; height: 14px;}
+    .icon-info {width: 16px; height: 16px; }
+}
