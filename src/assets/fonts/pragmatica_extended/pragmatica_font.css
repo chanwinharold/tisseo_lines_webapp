@@ -1,0 +1,212 @@
+/* Pragmatica - Normal Width */
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Extra_Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Extra_Light_Obl.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Light_Obl.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Book_Obl.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Bold_Obl.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('fonnts.com-Pragmatica_Black_Obl.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Pragmatica Condensed */
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Extra_Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Extra_Light_Obl.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Book_Obl.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Condensed';
+    src: url('fonnts.com-Pragmatica_Cond_Black_Obl.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Pragmatica Extended */
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Extra_Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Extra_Light_Obl.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Light_Obl.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Book_Obl.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Medium_Obl.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Bold_Obl.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Extra_Bold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Extra_Bold_Obl.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('fonnts.com-Pragmatica_Ext_Black_Obl.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}

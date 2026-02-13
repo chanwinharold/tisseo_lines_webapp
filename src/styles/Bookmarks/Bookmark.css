@@ -1,0 +1,76 @@
+@import "../style.css";
+
+body {
+    color: var(--color-neutral-100);
+    background-color: var(--color-secondary-1);
+}
+
+section {
+    display: flex;
+}
+.design {
+    background-color: var(--color-primary-1);
+    width: 12em;
+    height: 20em;
+    margin: 2em;
+    border-radius: 2ex;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    min-height: 100%;
+}
+
+.fav {
+    margin-left: auto;
+    width: 20px;
+}
+.icon {
+    width: 20px;
+}
+footer {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+
+}
+
+.image {
+    width: 150px;
+
+}
+
+.la_vache {
+    background-color: #FC671D;
+    width: 10em;
+    height: 8em;
+    border-radius: 0.5ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.lorem {
+    background-color: #DB001A;
+    width: 10em;
+    height: 8em;
+    border-radius: 0.5ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basso-balma {
+    background-color: #E575A6;
+    width: 10em;
+    height: 8em;
+    border-radius: 0.5ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ligne {
+    color: var(--color-secondary-1);
+}
+article > h5 {
+    color: var(--color-secondary-2);
+
+}

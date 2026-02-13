@@ -1,3 +1,6 @@
+@import "../assets/fonts/pragmatica_extended/pragmatica_font.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&display=swap');
+
 :root {
     --color-black: #000000;
     --color-primary-1: #26497F;
@@ -13,4 +16,28 @@
     --color-neutral-100: #FFFFFF;
     --color-neutral-200: #D9D9D9;
     --color-neutral-900: #000000;
+
+    font-size: 16px;
+    @media screen and (width <=1024px) { font-size: 14px; }
+    @media screen and (width <= 768px) { font-size: 12px; }
+    @media screen and (width <= 575px) { font-size: 10px; }
+    font-family: "DM Sans", sans-serif;
+}
+
+.menu-hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 15px; right: 20px;
+    background-color: transparent;
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 4px;
+    display: inline-grid;
+    place-content: center;
+    @media screen and (width <= 575px) {
+        svg {width: 24px; height: 24px;}
+    }
+}
+
+.hidden {
+    display: none;
 }
