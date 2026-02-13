@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-size: Arial;
+    background-color: #032d68;
+}
+
+.ma_partie {
+    width: 100%;
+    display: flex;
+}
+
+.cote_droit {
+    width: 50%;
+}
+
+.cote_gauche {
+    width: 25%;
+    padding: 20px;
+}
+
+.cote_droit {
+    width: 50%;
+}
+
+.cote_droit img {
+    width: 100%;
+}
+
+.cote_gauche ul {
+    color: #cae5ff;
+    font-family: sans-serif;
+    font-size: 40px 20px;
+}
+
+.contact {
+    background-color: #36a8d9;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.contact h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+footer {
+    color: #cae5ff;
+    font-family: sans-serif;
+}
