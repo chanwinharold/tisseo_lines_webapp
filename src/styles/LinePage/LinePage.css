@@ -6,13 +6,35 @@ body{
 
 }
 
-.Lines{
-    background-color: white;
-    border-radius:  10px;
+
+.title{
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  color: var(--color-neutral-100);
 }
 
+.second_part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.Lines{ 
+    background-color: rgba(0, 0, 0, 0.225);
+    color: var(--color-neutral-100);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+
 .first_part{
-    color: black;
+    color: var(--color-neutral-100);
     background-image:url(../../assets/images/image_people.png) ;
     padding: 1rem;
     text-align: center;
