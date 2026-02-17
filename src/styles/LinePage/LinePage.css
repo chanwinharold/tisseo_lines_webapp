@@ -30,7 +30,12 @@ body{
     width: 100%;
     text-align: center;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
+
 
 
 .first_part{
@@ -43,4 +48,19 @@ body{
 
 .h1{
     text-align: left;
+}
+
+.line-icon img {
+    width: 28px;   /* taille plus petite */
+    height: 28px;
+}
+
+.line-icon2{
+    margin-left: auto;   /* pousse à droite */
+}
+
+.line-icon2 img{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }
