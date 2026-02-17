@@ -25,25 +25,33 @@ body{
 .Lines{ 
     background-color: rgba(0, 0, 0, 0.225);
     color: var(--color-neutral-100);
-    border-radius: 10px;
+    border-radius: 12px;
     max-width: 800px;
     width: 100%;
-    text-align: center;
-    padding: 15px;
+    padding: 16px 18px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 15px;
+    gap: 18px;
 }
 
 
-
 .first_part{
+    position: relative;
     color: var(--color-neutral-100);
-    background-image:url(../../assets/images/image_people.png) ;
+    background-image: url(../../assets/images/image_people.png);
+    background-size: cover;
+    background-position: center;
     padding: 1rem;
     text-align: center;
+    z-index: 0;
+}
 
+.first_part::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;   /* 👈 PAS au-dessus */
 }
 
 .h1{
@@ -55,12 +63,45 @@ body{
     height: 28px;
 }
 
+.line-icon{
+    width: 46px;
+    height: 46px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.line-icon img{
+    width: 22px;
+    height: 22px;
+}
+
 .line-icon2{
-    margin-left: auto;   /* pousse à droite */
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .line-icon2 img{
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
+}
+
+.line-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1; /* prend toute la place */
+}
+
+.line-infos{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    opacity: 0.9;
 }
