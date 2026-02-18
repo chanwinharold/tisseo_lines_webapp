@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
+    <script src="../scripts/menu.js" defer></script>
     <link rel="stylesheet" href="../styles/Home/Home.css">
 
     <title>Home</title>
@@ -17,21 +18,40 @@
 <body>
 <button type="button" class="menu-hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  viewBox="0 0 16 16"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"  d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" /></svg></button>
 
+<div class="bg-menu-blur hidden"></div>
+
+<div class="menu-container move-right">
+    <header>
+        <div>
+            <img src="../assets/icons/icon_logo.png" alt="tisseo lines logo" width="48">
+            <span>Tisseo Transport<br> Lines</span>
+        </div>
+        <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"/></svg>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./Home.html">Accueil</a></li>
+            <li><a href="./Lines.html">Toutes les lignes</a></li>
+            <li><a href="./Bookmarks.html">Enregistrements</a></li>
+        </ul>
+    </nav>
+</div>
+
 <header>
     <div class="container-header">
 
-        <div class="container-header-image">
+        <div class="cote_droit">
             <img src="../assets/images/image_city_lines.png" alt="City lines">
         </div>
-        <div class="container-header-title">
-            <div class="container-header-1">
+        <div class="cote_gauche">
+            <div>
                 <div>
-                    <img src="../assets/icons/icon_logo.png" style="width: 100px;" alt="">
+                    <img src="../assets/icons/icon_logo.png" width="70" alt="">
                     <h1>Tisseo Transport <br> Lines</h1>
                 </div>
             </div>
             <a href="Lines.html">
-                <div class="container-header-2">
+                <div class="btn-try">
                     <span>Essayer Tisseo Lines</span>
                     <img src="../assets/icons/icon_arrow.svg" alt="">
                 </div>
@@ -72,24 +92,25 @@
 </section>
 <section class="contact">
     <h2>Get in Touch</h2>
-    <p>Contact us for support and feedback</h4>
+    <p>Contact us for support and feedback</p>
 </section>
 <footer>
     <div class="bas_de_page">
         <div>
-            <p class="title"><h4>Email</h4></p>
+            <p class="title">Email</p>
             <h3>hello@reallygreatsite.com</h3>
         </div>
 
         <div>
-            <p class="title"><h4>Phone</h4></p>
+            <p class="title">Phone</p>
             <h3>123-456-7890</h3>
         </div>
 
         <div>
-            <p class="title"><h4>Privacy Terms</h4></p>
-            <h3>Licence ©</h3>
+            <p class="title">Privacy Terms</p>
+            <p>Licence ©</p>
         </div>
+    </div>
 </footer>
 
 </body>
