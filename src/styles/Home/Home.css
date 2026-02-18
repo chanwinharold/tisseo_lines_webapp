@@ -10,31 +10,40 @@ body {
 
 .ma_partie {
     display: flex;
+    min-height: 90vh;
+
+    @media screen and (width <= 575px) {
+        flex-direction: column;
+    }
+
 }
 
 .cote_droit {
     flex: 1;
+    position: relative;
+    min-height: 300px;
+}
+.cote_droit img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%; height: 100%;
 }
 
 .cote_gauche {
     flex: 1;
     display: grid;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
     font-size: 1.2rem;
-
-    ul {
-        display: grid;
-        row-gap: 1.5rem;
-        margin: 4rem 4rem 4rem 1rem;
-    }
+}
+.cote_gauche ul {
+    display: grid;
+    row-gap: 1.5rem;
+    margin: 4rem 4rem 4rem 1rem;
 }
 
-.cote_droit img {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .contact {
     background-color: var(--color-primary-2);
@@ -53,9 +62,17 @@ body {
 }
 
 .bas_de_page{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    @media screen {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+    }
+    @media screen and (width <= 575px ){
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 .bas_de_page h3 {
@@ -64,15 +81,18 @@ body {
 }
 
 .container-header {
-    @media screen {
-        display: flex;
-        max-height: 100vh;
+    min-height: 90vh;
+    display: flex;
+    @media screen and (width <= 575px) {
+        flex-direction: column-reverse;
     }
 }
 .container-header .cote_gauche {
-    display: grid;
-    place-content: center;
+    @media screen {justify-content: center;}
+    @media screen and (width <= 768px) {justify-content: center;}
+    & > div {margin: 3rem;}
 }
+
 .btn-try {
     display: flex; gap: 1rem;
     flex-direction: row;

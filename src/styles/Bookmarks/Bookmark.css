@@ -3,21 +3,28 @@
 body {
     color: var(--color-neutral-100);
     background-color: var(--color-secondary-1);
+    padding-inline: 2rem;
 }
+
+.bookmark-title {font-size: 2em;}
 
 section {
     display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    padding-block: 5rem;
+    @media screen and (width <= 575px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .design {
     background-color: var(--color-primary-1);
-    width: 12em;
-    height: 20em;
-    margin: 2em;
+    width: 200px;
     border-radius: 2ex;
     display: flex;
     flex-direction: column;
     padding: 1em;
-    min-height: 100%;
 }
 
 .fav {
@@ -28,49 +35,44 @@ section {
     width: 20px;
 }
 footer {
-    margin-top: auto;
+    align-self: start;
+    margin-top: 1rem;
     display: flex;
     gap: 10px;
-
+    align-items: center;
 }
 
 .image {
-    width: 150px;
+    max-width: 100px;
+}
 
+.bookmark-shape {
+    width: 100%;
+    min-height: 150px;
+    border-radius: 0.5ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .la_vache {
     background-color: #FC671D;
-    width: 10em;
-    height: 8em;
-    border-radius: 0.5ex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .lorem {
     background-color: #DB001A;
-    width: 10em;
-    height: 8em;
-    border-radius: 0.5ex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .basso-balma {
     background-color: #E575A6;
-    width: 10em;
-    height: 8em;
-    border-radius: 0.5ex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.ligne {
+hr {
+    width: 100%;
     color: var(--color-secondary-1);
+    margin: 8px 0;
 }
 article > h5 {
     color: var(--color-secondary-2);
-
+    text-wrap: wrap;
+    max-height: 4ch;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
 }
