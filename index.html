@@ -1,18 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./src/styles/style.css">
-
-    <script type="module" src="/src/scripts/main.js" defer></script>
-    <title>tisseo_lines_webapp</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="module" src="src/scripts/menu.js"></script>
+    <link rel="stylesheet" href="src/styles/Home/Home.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Home</title>
 </head>
+
 <body>
-<a href="./src/pages/Lines.html">Aller vers Lines →</a><br>
-<a href="./src/pages/Bookmarks.html">Aller vers Bookmarks →</a><br>
-<a href="./src/pages/Home.html">Aller vers Home →</a><br>
-<a href="./src/pages/LinePage.html">Aller vers LinePage →</a><br>
+<button type="button" class="menu-hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  viewBox="0 0 16 16"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"  d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" /></svg></button>
+
+<div class="bg-menu-blur hidden"></div>
+
+<div class="menu-container move-right">
+    <header>
+        <div>
+            <img src="src/assets/icons/icon_logo.png" alt="tisseo lines logo" width="48">
+            <span>Tisseo Transport<br> Lines</span>
+        </div>
+        <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"/></svg>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./Home.html">Accueil</a></li>
+            <li><a href="src/pages/Lines.html">Toutes les lignes</a></li>
+            <li><a href="src/pages/Bookmarks.html">Enregistrements</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header>
+    <div class="container-header">
+        <div class="cote_droit">
+            <img src="src/assets/images/image_city_lines.png" alt="City lines">
+        </div>
+        <div class="cote_gauche">
+            <div>
+                <div>
+                    <img src="src/assets/icons/icon_logo.png" width="70" alt="">
+                    <h1>Tisseo Transport <br> Lines</h1>
+                </div>
+                <a href="src/pages/Lines.html">
+                    <div class="btn-try">
+                        <span>Essayer Tisseo Lines</span>
+                        <img src="src/assets/icons/icon_arrow.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<section class="ma_partie">
+    <div class="cote_gauche">
+        <ul>
+            <li>Affichage de l’ensemble des lignes de transport Tisséo</li>
+            <li>Chargement des données en temps réel via l’API Tisséo</li>
+            <li>Affichage dynamique des résultats sans recharger la page</li>
+            <li>Tri des lignes (par nom, numéro, type de transport, etc.)</li>
+            <li>Filtrage des lignes selon des critères spécifiques</li>
+            <li>Interface interactive et responsive</li>
+            <li>Mise à jour rapide des données au clic utilisateur</li>
+        </ul>
+    </div>
+    <div class="cote_droit">
+        <img src="src/assets/images/image_user.png" alt="Image du garçon à l'arrêt de bus">
+    </div>
+</section>
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Contact us for support and feedback</p>
+</section>
+<footer>
+    <div class="bas_de_page">
+        <div>
+            <p class="title">Email</p>
+            <h3>hello@reallygreatsite.com</h3>
+        </div>
+
+        <div>
+            <p class="title">Phone</p>
+            <h3>123-456-7890</h3>
+        </div>
+
+        <div>
+            <p class="title">Privacy Terms</p>
+            <p>Licence ©</p>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>
