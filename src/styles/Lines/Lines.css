@@ -109,7 +109,6 @@ body .bg-blur {
     gap: 1rem;
 }
 .line-infos div:first-child {
-    background-color: red;
     border-radius: 100%;
     display: grid;
     place-items: center;
@@ -125,6 +124,7 @@ body .bg-blur {
 }
 .line-infos strong {
     font-size: 1.5em;
+    a {text-decoration: unset; color: var(--color-neutral-100);}
 }
 
 /**************COMPONENTS*****************/
@@ -151,7 +151,8 @@ body .bg-blur {
     cursor: pointer;
     word-break: keep-all;
     text-wrap: nowrap;
-    &:has(input:not(:checked)) {opacity: 0.8;}
+    &:has(input:not(:checked)) {background-color: rgba(51, 153, 204, 0.5)
+    }
 }
 .btn-search {
     width: 100%;

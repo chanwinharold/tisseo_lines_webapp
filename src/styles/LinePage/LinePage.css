@@ -71,7 +71,8 @@ body {
     .first_part .line-article {
         flex-direction: column;
         .line-infos {flex-direction: column;}
-        .line-bookmark, .line-icon {align-self: start;}
+        .line-bookmark {margin-top: 1rem;}
+        .line-bookmark, .line-infos, .line-icon {align-self: start;}
         .line-infos strong {
             max-width: unset;
             max-height: unset;

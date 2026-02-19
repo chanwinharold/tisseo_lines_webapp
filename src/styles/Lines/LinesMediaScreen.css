@@ -23,7 +23,9 @@
 
 /*Laptop*/
 @media screen and (width <= 1024px) {
-
+    .lines-header nav div {
+        max-width: 200px;
+    }
 }
 
 /*Tablet*/
@@ -42,9 +44,6 @@
     }
     .line-infos div:first-child img {
         width: 30px;
-    }
-    .lines-header nav div {
-        max-width: 200px;
     }
     .lines-container {
         margin-inline: 0.5rem; padding-inline: 2rem;
