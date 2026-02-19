@@ -101,6 +101,8 @@ body .bg-blur {
     padding: 1rem 2rem;
     border-radius: 12px;
     background-color: var(--color-secondary-1);
+    transition: all 600ms ease-out;
+    &:hover {transform: scale(1.025);}
 }
 
 .line-infos {

@@ -55,15 +55,6 @@ footer {
     align-items: center;
 }
 
-.la_vache {
-    background-color: #FC671D;
-}
-.lorem {
-    background-color: #DB001A;
-}
-.basso-balma {
-    background-color: #E575A6;
-}
 hr {
     width: 100%;
     color: var(--color-secondary-1);
